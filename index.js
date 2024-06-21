@@ -26,7 +26,7 @@ app.all('*', (req, res) => {
 
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/doctorsapp").then(() => {
+mongoose.connect("mongodb+srv://roopsa8890:cTHBgbWg4w91VuGX@cluster0.fj7deot.mongodb.net/doctorapp?retryWrites=true&w=majority&appName=Cluster0").then(() => {
     console.log("connected to mongoDB");
 
 }).catch((err) => {
